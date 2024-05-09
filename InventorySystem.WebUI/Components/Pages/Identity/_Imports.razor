@@ -1,0 +1,15 @@
+﻿@using InventorySystem.Application.Service
+@using Microsoft.AspNetCore.Authorization
+@using InventorySystem.WebUI.Components.Layout.Identity
+@* @using InventorySystem.Application.DTO.Request.ActivityTracker *@
+@using System.Security.Claims
+@* @using InventorySystem.WebUI.Components.Pages.General *@
+@using Microsoft.AspNetCore.Components.Authorization
+@using InventorySystem.Application.DTO.Request.Identity
+
+@layout AuthenticationLayout
+
+@attribute [AllowAnonymous]
+
+@inject IAccountService accountService
+@inject NavigationManager NavManager

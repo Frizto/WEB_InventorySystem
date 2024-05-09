@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Application", "InventorySystem.Application\InventorySystem.Application.csproj", "{9B089303-17DD-4507-A034-1DCC00E24356}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventorySystem.Application", "InventorySystem.Application\InventorySystem.Application.csproj", "{9B089303-17DD-4507-A034-1DCC00E24356}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Infrastructure", "InventorySystem.Infrastructure\InventorySystem.Infrastructure.csproj", "{73F0ECEF-520D-4B41-B576-8E01740208AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventorySystem.Infrastructure", "InventorySystem.Infrastructure\InventorySystem.Infrastructure.csproj", "{73F0ECEF-520D-4B41-B576-8E01740208AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Domain", "InventorySystem.Domain\InventorySystem.Domain.csproj", "{453E1E4A-1267-4F55-85C2-955E7FE2AE72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventorySystem.Domain", "InventorySystem.Domain\InventorySystem.Domain.csproj", "{453E1E4A-1267-4F55-85C2-955E7FE2AE72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.WebUI", "InventorySystem.WebUI\InventorySystem.WebUI.csproj", "{5971D7B4-AABF-4664-AD1A-974CFFB0729E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InventorySystem.WebUI", "InventorySystem.WebUI\InventorySystem.WebUI.csproj", "{5971D7B4-AABF-4664-AD1A-974CFFB0729E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

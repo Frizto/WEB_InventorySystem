@@ -1,12 +1,19 @@
 using InventorySystem.WebUI.Components;
 using InventorySystem.Infrastructure.DependencyInjection; 
+using InventorySystem.Application.DependencyInjection;
+using InventorySystem.WebUI.Components.Layout.Identity;
+using Microsoft.AspNetCore.Components.Authorization;
 var builder = WebApplication.CreateBuilder(args);
+
+
+// Add clean architecure services to the container.
+builder.Services.AddInfrastructureService(builder.Configuration);
+builder.Services.AddApplicationService();
+builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthStateProvider>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
-builder.Services.AddInfrastructureService(builder.Configuration);
 
 var app = builder.Build();
 
@@ -25,5 +32,6 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+app.MapSignOutEndpoint();
 
 app.Run();

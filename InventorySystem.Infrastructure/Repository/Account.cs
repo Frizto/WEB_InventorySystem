@@ -99,7 +99,7 @@ public class Account(UserManager<ApplicationUser> userManager, SignInManager<App
         }
     }
 
-    public async Task<ServiceResponse> LoginAsync(LoginUserRequestDTO model)
+    public async Task<ServiceResponse> LogInAsync(LoginUserRequestDTO model)
     {
         // Search for the user in the DB
         var user = await FindUserByEmail(model.Email);

@@ -1,5 +1,7 @@
 ﻿using InventorySystem.Application.Extension.Identity;
+using InventorySystem.Application.Interface.Identity;
 using InventorySystem.Infrastructure.DataAccess;
+using InventorySystem.Infrastructure.Repository;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -50,6 +52,8 @@ public static class ServiceContainer
             adp.RequireRole("User");
         });
 
+        services.AddCascadingAuthenticationState();
+        services.AddScoped<IAccount, Account>();
         //services.AddScoped<IUserClaimsRepository, UserClaimsRepository>();
 
         return services;
