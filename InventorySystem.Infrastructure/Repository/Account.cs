@@ -177,9 +177,9 @@ public class Account(UserManager<ApplicationUser> userManager, SignInManager<App
     // Seed the master admin user
     public async Task SetUpAsync() => await CreateUserAsync(new CreateUserRequestDTO()
     {
-        Name = "Master Admin",
-        Email = "masteradmin@inventorysystem.com",
-        Password = "MasterAdmin@123",
+        Name = "Admin",
+        Email = "admin@inventorysystem.com",
+        Password = "Admin@123",
         Policy = Policy.AdminPolicy
     });
 
